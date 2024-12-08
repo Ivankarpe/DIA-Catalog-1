@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Назва"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Опис"/>
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Ціна"/>
+
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id категорії" />
+
+        <!-- Checkbox for showing as recommended -->
+        <CheckBox
+            android:id="@+id/cbRecommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show in Recommended"/>
+
+        <!-- Fields for adding characteristics -->
+        <EditText
+            android:id="@+id/etCharacteristicKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Назва характеристики" />
+
+        <EditText
+            android:id="@+id/etCharacteristicValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Характеристика" />
+
+        <Button
+            android:id="@+id/btnAddCharacteristic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26ABC3"
+            android:text="Додати характеристику" />
+
+        <!-- Fields for adding models -->
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Модель"/>
+
+        <Button
+            android:id="@+id/btnAddModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26ABC3"
+            android:text="Додати модель" />
+
+        <EditText
+            android:id="@+id/etPicUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Image URL"/>
+
+        <Button
+            android:id="@+id/btnAddPicUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26ABC3"
+            android:text="Додати Image URL" />
+
+        <LinearLayout
+            android:id="@+id/layoutImages"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Fields for adding site URLs -->
+        <EditText
+            android:id="@+id/etSiteUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Посилання сайт URL" />
+
+        <Button
+            android:id="@+id/btnAddSiteUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26ABC3"
+            android:text="Додати Site URL" />
+
+        <Button
+            android:id="@+id/btnSaveItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26ABC3"
+            android:text="Зберегти товар" />
+
+    </LinearLayout>
+</ScrollView>

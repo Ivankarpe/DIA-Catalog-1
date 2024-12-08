@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity=""
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назва товару"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ціна товару"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/characteristicsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" />
+
+</LinearLayout>
